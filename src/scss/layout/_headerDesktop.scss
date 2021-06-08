@@ -1,0 +1,55 @@
+.header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+    .logo {
+        padding-top: 1.5rem;
+        padding-right: 3rem;
+        display: grid;
+        place-items: center; // acmodar el logo en el centro
+        position: absolute;
+        width: 100%;
+        .logo-cont {
+            width: 10rem; // porque no se centra y con esto lo centramos
+        }
+    }
+
+    .navegacion {
+        padding-top: 11rem;
+        padding-bottom: 2rem;
+        background-color: rgba($color: $marron, $alpha: 0.6);
+        .navegacion-cont {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: .3rem;
+
+            a {
+                position: relative; // para aplicar el efecto
+                padding: 0 1rem;
+
+                &:hover {
+                    color: white;
+                }
+
+                &::after { // efecto de las opciones del menu
+                    content: "";
+                    position: absolute;
+                    background-color: $beige;
+                    height: .3rem;
+                    width: 0;
+                    left: 0;
+                    bottom: -1rem;
+                    transition: 0.3s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
