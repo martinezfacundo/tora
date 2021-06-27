@@ -4,33 +4,49 @@
     width: 100%;
 
     .logo {
-        padding-top: 1.5rem;
-        padding-right: 3rem;
-        display: grid;
-        place-items: center; // acmodar el logo en el centro
+        padding-top: .5vh;
+        display: flex;
+        justify-content: center; // acmodar el logo en el centro
         position: absolute;
         width: 100%;
-        .logo-cont {
-            width: 10rem; // porque no se centra y con esto lo centramos
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .logo-cont {
+                width: 4.5vw;
+                height: 100%; // porque no se centra y con esto lo centramos
+            }
         }
     }
 
     .navegacion {
-        padding-top: 8.5rem;
-        padding-bottom: 2rem;
+        padding-top: 6vh;
+        padding-bottom: 2.3vh;
         background-color: rgba($color: $marron, $alpha: 0.6);
+
         .navegacion-cont {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            font-size: 1.5rem;
+            justify-content: space-around;
+            font-size: calc(.5vw + .5rem);
             text-transform: uppercase;
             font-weight: 300;
-            letter-spacing: .3rem;
+            letter-spacing: .15vw;
+
+            #menu-izq,
+            #menu-der {
+                display: flex;
+                justify-content: space-around;
+                place-items: center;
+                width: 25vw;
+            }
 
             a {
                 position: relative; // para aplicar el efecto
-                padding: 0 1rem;
+                padding: 0 .5vh;
 
                 &:hover {
                     color: white;
@@ -40,10 +56,10 @@
                     content: "";
                     position: absolute;
                     background-color: $beige;
-                    height: .3rem;
+                    height: .1vh;
                     width: 0;
                     left: 0;
-                    bottom: -1rem;
+                    bottom: -.5vh;
                     transition: 0.3s;
                 }
 

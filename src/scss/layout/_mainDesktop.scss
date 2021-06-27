@@ -2,7 +2,7 @@
     .main{
         position: relative; // relative para poder hacer el deg
         width: 100%;
-        height: 100vh; // vh porque 1vh = 1px (heigh responsive)
+        height: 100vh; // vh porque 1vh = 1px (height responsive)
 
         .carousel { // defino el lugar en donde se va a desarrollar el carrusel
             width: 100%;
@@ -13,35 +13,39 @@
                 height: 100vh;
                 display: flex;
                 align-items: center;
+
+                .bg {
+                    height: 100vh;
+                }
             }
 
             .boton { // le doy forma circular al "selector de imagenes" que esta en la parte inferior 
                 border-radius: 100%;
-                width: 1rem;
-                height: 1rem;
-                margin: 0 1.5rem;
+                width: .5vw;
+                height: 1vh;
+                margin: 0 1vw;
             }
 
             .carousel-control-prev-icon { // mover la flecha para la izq
-                transform: translateX(-8rem);
+                transform: translateX(-4vw);
             }
 
             .carousel-control-next-icon { // mover la flecha para la der
-                transform: translateX(8rem);
+                transform: translateX(4vw);
             }
 
             .parrafo { // el texto que cambia con las imagenes
                 z-index: 1; // para que se vea arriba y de color blanco
-                bottom: 54.4rem;
+                bottom: 45vh;
                 width: 100%;
                 display: flex;
                 justify-content: flex-end; // para poder colocarlo en ese lugar, tiene una caja muy grande
-
+                left: -8vw;
+                
                 h1 {
-                    transform: translateX(-43.8rem);
                     color: #fff;
                     font-family: $fuentePrincipal;
-                    font-size: 7rem;
+                    font-size: calc(3vw + 1rem);
                 }
             }
         }
@@ -52,51 +56,50 @@
             height: 100%;
             background-color: rgba($color: #000, $alpha: .43); // deg
 
-            .titulo-programa {
-                position: absolute;
-                top: 55%; // con esto lo movemos con el absolute
-                right: 15rem;
-                z-index: 1; // para poder clickearlos sino se quedan atras
-
-                #informacion {
-                    text-transform: uppercase;
-                    font-size: 1.6rem;
-                    letter-spacing: .3rem;
-                    position: relative;
-                    padding: 0 1rem;
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        background-color: $beige;
-                        height: .3rem;
-                        width: 0;
-                        left: 0;
-                        bottom: -1rem;
-                        transition: 0.3s;
-                    }
-
-                    &:hover::after {
-                        width: 100%;
-                    }
-
-                    &:hover {
-                        color: white;
-                    }
-                }
-            }
-
             .social {
                 z-index: 1; // para poder clickearlos sino se quedan atras
                 display: flex;
                 justify-content: space-between;
                 position: absolute;
-                bottom: 2rem;
-                left: 3rem;
-                 .social-cont {
-                    width: 2rem;
+                bottom: 1vw;
+                left: 2.5vw;
+                    .social-cont {
+                        width: 1vw;
+                    }
+            }
+
+            .vermas-container {
+                position: absolute;
+                top: 53vh; // con esto lo movemos con el absolute
+                left: 86vw;
+                z-index: 1; // para poder clickearlos sino se quedan atras
+    
+                #informacion {
+                    text-transform: uppercase;
+                    font-size: calc(.8vw + .1rem);
+                    letter-spacing: .2vw;
+                    position: relative;
+                    padding: 0 1vh;
+    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-color: $beige;
+                        height: .2vh;
+                        width: 0;
+                        left: 0;
+                        bottom: -1vh;
+                        transition: 0.3s;
+                    }
+    
+                    &:hover::after {
+                        width: 100%;
+                    }
+    
+                    &:hover {
+                        color: white;
+                    }
                 }
-               
             }
         }
     }

@@ -9,18 +9,23 @@
     <title>TORA</title>
 </head>
 <body>
+  <div id="uno">
     <header class="header">
         <div class="logo">
             <a href="index.html"><img class="logo-cont" src="/build/img/toradesktopblanco.webp" alt=""></a>
-         </div>
-         <div class="navegacion">
-             <nav class="navegacion-cont contenedor-nav">
-                 <a href="index.html">Home</a>
-                 <a href="about.html">Sobre Mi</a>
-                 <a href="planes.html">Planes</a>
-                 <a href="contacto.html">Contacto</a>
-             </nav>
-         </div>
+        </div>
+        <div class="navegacion">
+            <nav class="navegacion-cont contenedor-nav">
+                <div id="menu-izq">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">Planes</a>
+                </div>
+                <div id="menu-der">
+                  <a href="planes.html">Sobre Mi</a>
+                  <a href="contacto.html">Contacto</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <main class="main">
         <div class="carousel">
@@ -32,19 +37,19 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/build/img/herodesktop.jpg" class="d-block w-100" alt="...">
+                <img src="/build/img/herodesktop.jpg" class="d-block w-100 bg" alt="...">
                 <div class="carousel-caption parrafo">
                   <h1>Este es el programa 1</h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="/build/img/herodesktop2.jpg" class="d-block w-100" alt="...">
+                <img src="/build/img/herodesktop2.jpg" class="d-block w-100 bg" alt="...">
                 <div class="carousel-caption parrafo">
                   <h1>Este es el programa 2</h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="/build/img/herodesktop3.jpeg" class="d-block w-100" alt="...">
+                <img src="/build/img/herodesktop3.jpeg" class="d-block w-100 bg" alt="...">
                 <div class="carousel-caption parrafo">
                   <h1>Este es el programa 3</h1>
                 </div>
@@ -61,16 +66,34 @@
           </div>
         </div>
         <div class="main-cont">
-            <div class="titulo-programa">
-                <a id="informacion" href="#">Ver Mas</a>
-            </div>
             <div class="social contenedor-social">
-               <a href="https://www.instagram.com/mechi_abdala/" target="_blank"><img class="social-cont" src="/src/img/logotipo-de-instagram.png" alt="instagram"></a>
-               <a href="#"><img class="social-cont" src="/src/img/simbolo-de-la-aplicacion-de-facebook.png" alt="facebook"></a>
-               <a href="#"><img class="social-cont" src="/src/img/email.png" alt="email"></a>
+              <a href="https://www.instagram.com/mechi_abdala/" target="_blank"><img class="social-cont" src="/src/img/logotipo-de-instagram.png" alt="instagram"></a>
+              <a href="#"><img class="social-cont" src="/src/img/simbolo-de-la-aplicacion-de-facebook.png" alt="facebook"></a>
+              <a href="#"><img class="social-cont" src="/src/img/email.png" alt="email"></a>
+            </div>
+            <div class="vermas-container">
+              <a id="informacion" href="#">Ver Mas</a>
             </div>
         </div>
     </main>
+  </div>
+  <div id="dos">
+    <div class="titulo-dos">
+      <h1>PLAN<span>PERSONALIZADO</span></h1>
+    </div>
+    <div class="contenedor-resumen">
+      <p class="resumen">
+        Este plan es individual y se diseña especialmente para tus objetivos personales.<br>
+        Mi meta es ayudarte a lograr tus objetivos desde un abordaje fisico y mental.<br>
+        Lo que contratas con este programa son asesorias virtuales donde vas a disponer de las<br>
+        herramientas necesarias para transformar tu mente, tu cuerpo y asi lograr los<br>
+        cambios que tanto anhelas.<br>
+        <br>
+        El plan se contrata mensualmente, una vez finalizado se puede renovar la subscripcion.<br>
+        Los entrenamientos se envian semana a semana en formato pdf por mail.
+      </p>
+    </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/@barba/core"></script>
