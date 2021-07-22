@@ -3,6 +3,7 @@
         position: relative; // relative para poder hacer el deg
         width: 100%;
         height: 100vh; // vh porque 1vh = 1px (height responsive)
+        overflow: hidden;
 
         .carousel { // defino el lugar en donde se va a desarrollar el carrusel
             width: 100%;
@@ -24,6 +25,12 @@
                 width: .5vw;
                 height: 1vh;
                 margin: 0 1vw;
+            }
+
+            .carousel-control-next,
+            .carousel-control-prev {
+                height: 75vh;
+                margin: auto 0;
             }
 
             .carousel-control-prev-icon { // mover la flecha para la izq
@@ -55,18 +62,6 @@
             width: 100%; // este y el de abajo para ocupar toda la pantalla
             height: 100%;
             background-color: rgba($color: #000, $alpha: .43); // deg
-
-            .social {
-                z-index: 1; // para poder clickearlos sino se quedan atras
-                display: flex;
-                justify-content: space-between;
-                position: absolute;
-                bottom: 1vw;
-                left: 2.5vw;
-                    .social-cont {
-                        width: 1vw;
-                    }
-            }
 
             .vermas-container {
                 position: absolute;

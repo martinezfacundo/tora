@@ -1,0 +1,246 @@
+@include desktop {
+    #planes {
+        position: relative;
+        background-color: white;
+        overflow: hidden;
+
+        .contenedor-imagen-planes {
+            width: 100%;
+            height: 100%;
+
+            .tora-imagen-planes {
+                position: absolute;
+                top: 5.5vh;
+                right: 12vw;
+                width: 25vw;
+            }
+        }
+        
+
+        .contenedor-titulo-planes {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+
+            h1 {
+                position: absolute;
+                margin: 0;
+                top: 5.5vh;
+                left: 12vw;
+                font-size: calc(3.5vw + .5rem);
+                font-weight: 700;
+                color: $marronClaro;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .tora-planes {
+            width: 10vw;
+            height: 20vh;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .contenedor-texto-planes {
+            padding-top: 28vh;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin-left: 12vw;
+            display: flex;
+            align-items: center;
+
+            .linea-planes {
+                margin-bottom: 1vh;
+                height: 17.5vh;
+                width: .5vw;
+                background-color: $marronClaro;
+                margin-right: 1vw;
+            }
+
+            .texto-planes {
+
+                .texto {
+                    font-family: $fuentePrincipal;
+                    font-size: calc(.6vw + .3rem);
+                }
+            }
+        }
+
+        .contenedor-planes {
+            background-color: white;
+            margin: 5.5vh auto;
+            width: 80vw;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            padding: 1vh 26vw;
+
+            .titulo-planes {
+                width: 70vw;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+
+                h3 {
+                    margin: 0;
+                    font-family: $fuentePrincipal;
+                    margin: 3vh 0;
+                    font-size: calc(2.5vw + .2rem);
+                    font-weight: 300;
+                }
+            }
+
+            .contenedor-planes-contenido {
+                background-color: $beige;
+                padding: 1vh 2vw;
+
+                .subcontenedor {
+                    width: 70vw;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-left: 2vw;
+    
+                    p {
+                        font-family: $fuentePrincipal;
+                        font-size: calc(.75vw + .2rem);
+                        margin: 0;
+                        padding-left: 5vw;
+    
+                        span {
+                        font-weight: 700;
+                        }
+                    }
+
+                    .plan {
+                        margin: 2vh 0;
+                        width: 5vw;
+                        height: 10vh;
+                        border-radius: 100%;
+                    }
+        
+                    .plan-uno {
+                        background-image: url('../../../build/img/Icono Mancuerna.png');
+                        background-position: center;
+                        background-size: 4vw;
+                        background-repeat: no-repeat;
+                    }
+        
+                    .plan-dos {
+                        background-image: url('../../../build/img/Icono Cubiertos.png');
+                        background-position: center;
+                        background-size: 3.5vw;
+                        background-repeat: no-repeat;
+                    }
+        
+                    .plan-tres {
+                        background-image: url('../../../build/img/Icono Mensaje.png');
+                        background-position: center;
+                        background-size: 3.5vw;
+                        background-repeat: no-repeat;
+                    }
+        
+                    .plan-cuatro {
+                        background-image: url('../../../build/img/Icono Female con Cerebro.png');
+                        background-position: center;
+                        background-size: 3.2vw;
+                        background-repeat: no-repeat;
+                    }
+        
+                    .plan-cinco {
+                        background-image: url('../../../build/img/Icono E-Book.png');
+                        background-position: center;
+                        background-size: 3.2vw;
+                        background-repeat: no-repeat;
+                    }
+        
+                    .plan-seis {
+                        background-image: url('../../../build/img/Icono Clip de Video.png');
+                        background-position: center;
+                        background-size: 4.3vw;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+
+        .contenedor-funcionamiento {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+
+            h2 {
+                color: $marron;
+                font-size: calc(3.5vw + 1.5rem);
+                padding-bottom: 2vh;
+                font-weight: 700;
+            }
+
+            h4 {
+                padding-bottom: 4.5vh;
+                font-size: calc(1.5vw + .5rem);
+                font-weight: 700;
+            }
+
+            h5 {
+                font-size: calc(1vw + .5rem);
+                font-weight: 300;
+                letter-spacing: .1vw;
+            }
+        }
+
+        .contenedor-funcionamiento-texto {
+            margin: 5vh auto;
+            width: 70vw;
+            background-color: $beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5vh 0;
+
+            p {
+                font-size: calc(.8vw + .5rem);
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .contenedor-comprar-plan {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            h4 {
+                font-size: calc(2vw + 1rem);
+                color: $marron;
+                font-weight: 300;
+            }
+
+            button {
+                border: none;
+                background-color: $marron;
+                color: white;
+                padding: 2vh 4vw;
+                border-radius: .7vw;
+                margin: 5vh 0;
+                font-size: calc(1vw + .5rem);
+
+                &:hover {
+                    
+                background-color: $marronClaro;
+                }
+            }
+        }
+    }
+}

@@ -1,72 +1,128 @@
-.header {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-
-    .logo {
-        padding-top: .5vh;
-        display: flex;
-        justify-content: center; // acmodar el logo en el centro
+@include desktop {
+    .header {
+        overflow: hidden;
         position: absolute;
+        z-index: 1;
         width: 100%;
 
-        a {
+        .logo {
+            padding-top: .5vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            .logo-cont {
-                width: 4.5vw;
-                height: 100%; // porque no se centra y con esto lo centramos
-            }
-        }
-    }
-
-    .navegacion {
-        padding-top: 6vh;
-        padding-bottom: 2.3vh;
-        background-color: rgba($color: $marron, $alpha: 0.6);
-
-        .navegacion-cont {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            font-size: calc(.5vw + .5rem);
-            text-transform: uppercase;
-            font-weight: 300;
-            letter-spacing: .15vw;
-
-            #menu-izq,
-            #menu-der {
-                display: flex;
-                justify-content: space-around;
-                place-items: center;
-                width: 25vw;
-            }
+            justify-content: center; // acmodar el logo en el centro
+            position: absolute;
+            width: 100%;
 
             a {
-                position: relative; // para aplicar el efecto
-                padding: 0 .5vh;
-
-                &:hover {
-                    color: white;
-                }
-
-                &::after { // efecto de las opciones del menu
-                    content: "";
-                    position: absolute;
-                    background-color: $beige;
-                    height: .1vh;
-                    width: 0;
-                    left: 0;
-                    bottom: -.5vh;
-                    transition: 0.3s;
-                }
-
-                &:hover::after {
-                    width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .logo-cont {
+                    width: 4.5vw;
+                    height: 100%; // porque no se centra y con esto lo centramos
                 }
             }
         }
-    }
+
+        .navegacion-dos {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 5.5vh;
+
+            .social {
+                z-index: 3; // para poder clickearlos sino se quedan atras
+                display: flex;
+                justify-content: space-between;
+                margin: 0 3vw;
+                    .social-cont {
+                        width: 1.3vw;
+                    }
+            }
+
+            .signing-container {
+                margin: 0 3vw;
+                font-weight: 300;
+                font-size: calc(.5vw + .5rem);
+
+                a {
+                    position: relative; // para aplicar el efecto
+                    padding: 0 .5vh;
+
+                    &:hover {
+                        color: white;
+                    }
+
+                    &::after { // efecto de las opciones del menu
+                        content: "";
+                        position: absolute;
+                        background-color: $beige;
+                        height: .1vh;
+                        width: 0;
+                        left: 0;
+                        bottom: -.5vh;
+                        transition: 0.3s;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .navegacion {
+            padding-top: 6vh;
+            padding-bottom: 2.3vh;
+            background-color: rgba($color: $marron, $alpha: 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+            .navegacion-cont {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                font-size: calc(.5vw + .5rem);
+                text-transform: uppercase;
+                font-weight: 300;
+                letter-spacing: .15vw;
+
+                #menu-izq,
+                #menu-der {
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    width: 20vw;
+                }
+
+                a {
+                    position: relative; // para aplicar el efecto
+                    padding: 0 .5vh;
+
+                    &:hover {
+                        color: white;
+                    }
+
+                    &::after { // efecto de las opciones del menu
+                        content: "";
+                        position: absolute;
+                        background-color: $beige;
+                        height: .1vh;
+                        width: 0;
+                        left: 0;
+                        bottom: -.5vh;
+                        transition: 0.3s;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }   
 }
