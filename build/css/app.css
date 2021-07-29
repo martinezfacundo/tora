@@ -578,7 +578,7 @@ a {
 @media (min-width: 992px) {
   #planes {
     position: relative;
-    background-color: white;
+    background-color: #FAF2E4;
     overflow: hidden;
   }
   #planes .contenedor-imagen-planes {
@@ -589,7 +589,7 @@ a {
     position: absolute;
     top: 5.5vh;
     right: 12vw;
-    width: 25vw;
+    width: 22vw;
   }
   #planes .contenedor-titulo-planes {
     width: 100%;
@@ -625,19 +625,19 @@ a {
   }
   #planes .contenedor-texto-planes .linea-planes {
     margin-bottom: 1vh;
-    height: 17.5vh;
+    height: 21.5vh;
     width: .5vw;
     background-color: #6b5537;
     margin-right: 1vw;
   }
   #planes .contenedor-texto-planes .texto-planes .texto {
     font-family: "Roboto", sans-serif;
-    font-size: calc(.6vw + .3rem);
+    font-size: calc(.8vw + .3rem);
   }
   #planes .contenedor-planes {
     background-color: white;
     margin: 5.5vh auto;
-    width: 80vw;
+    width: 70vw;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -646,7 +646,7 @@ a {
     padding: 1vh 26vw;
   }
   #planes .contenedor-planes .titulo-planes {
-    width: 70vw;
+    width: 55vw;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -659,20 +659,20 @@ a {
     font-weight: 300;
   }
   #planes .contenedor-planes .contenedor-planes-contenido {
-    background-color: #FAF2E4;
+    background-color: white;
     padding: 1vh 2vw;
   }
   #planes .contenedor-planes .contenedor-planes-contenido .subcontenedor {
-    width: 70vw;
+    width: 55vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
     align-items: center;
-    margin-left: 2vw;
+    justify-content: flex-end;
   }
   #planes .contenedor-planes .contenedor-planes-contenido .subcontenedor p {
     font-family: "Roboto", sans-serif;
-    font-size: calc(.75vw + .2rem);
+    font-size: calc(.8vw + .2rem);
     margin: 0;
     padding-left: 5vw;
   }
@@ -746,7 +746,7 @@ a {
   #planes .contenedor-funcionamiento-texto {
     margin: 5vh auto;
     width: 70vw;
-    background-color: #FAF2E4;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -774,10 +774,10 @@ a {
     border: none;
     background-color: #62461F;
     color: white;
-    padding: 2vh 4vw;
+    padding: 6vh 8vw;
     border-radius: .7vw;
     margin: 5vh 0;
-    font-size: calc(1vw + .5rem);
+    font-size: calc(2.5vw + .5rem);
   }
   #planes .contenedor-comprar-plan button:hover {
     background-color: #6b5537;
